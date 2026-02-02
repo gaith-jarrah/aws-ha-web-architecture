@@ -1,6 +1,6 @@
 # AWS Highly Available Web Architecture
 
-![Architecture Diagram](architecture.png)
+[![Diagram](architecture.png)](architecture.png) 
 
 ## About this project
 This project is a hands-on AWS lab that focuses on designing a highly available and scalable web architecture.
