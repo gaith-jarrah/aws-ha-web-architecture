@@ -1,5 +1,7 @@
 # AWS Highly Available Web Architecture
 
+![Architecture Diagram](architecture.png)
+
 ## About this project
 This project is a hands-on AWS lab that focuses on designing a highly available and scalable web architecture.
 The goal was to practice real AWS infrastructure concepts such as networking, load balancing, and auto scaling,
