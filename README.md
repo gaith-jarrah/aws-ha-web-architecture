@@ -1,7 +1,6 @@
 # AWS Highly Available Web Architecture
 
-![Diagram](architecture.png)](architecture.png) 
-
+[![Architecture Diagram](architecture.png)](https://raw.githubusercontent.com/USERNAME/aws-ha-web-architecture/main/architecture.png)
 ## About this project
 This project is a hands-on AWS lab that focuses on designing a highly available and scalable web architecture.
 The goal was to practice real AWS infrastructure concepts such as networking, load balancing, and auto scaling,
