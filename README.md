@@ -1,6 +1,6 @@
 # AWS Highly Available Web Architecture
 
-[![Architecture Diagram](architecture.png)](https://raw.githubusercontent.com/USERNAME/aws-ha-web-architecture/main/architecture.png)
+[![Architecture Diagram](architecture.png)]
 ## About this project
 This project is a hands-on AWS lab that focuses on designing a highly available and scalable web architecture.
 The goal was to practice real AWS infrastructure concepts such as networking, load balancing, and auto scaling,
@@ -77,38 +77,45 @@ Direct inbound access to EC2 instances is not allowed.
 ## Lab 2 – Amazon Route 53 Routing Policies
 
 ### Description
-This lab focuses on DNS routing using Amazon Route 53.
-The objective was to understand how Route 53 routes traffic based on different conditions such as user location, client IP address, and availability.
+In this lab, I worked hands-on with Amazon Route 53 to understand how DNS routing
+policies work in real AWS environments.  
+The goal was to learn how traffic can be routed based on different conditions such as
+user location, client IP address, and availability.
 
-The lab was implemented using the AWS Management Console without deploying any applications.
+This lab focuses only on DNS and routing concepts and was implemented using the
+AWS Management Console.
 
 ---
 
-### Routing policies implemented
+### What was implemented
 
 #### 1. Simple Routing
-- A basic A record that always returns the same IP address.
+- Created a basic A record that always returns the same IP address.
 - Used to demonstrate default DNS behavior.
 
 #### 2. Geolocation Routing
-- Traffic is routed based on the user’s geographic location.
-- Implemented records for:
+- Implemented routing based on the user’s geographic location.
+- Records were created for:
   - Germany
   - United States
   - Default (fallback for other locations)
 
 #### 3. IP-based Routing
-- Traffic is routed based on the client’s source IP address.
+- Implemented routing based on the client’s source IP address.
 - CIDR collections were created and used to map specific IP ranges to specific DNS responses.
 
 #### 4. Multi-Value Answer Routing
-- Multiple IP addresses are returned for the same DNS name.
-- Demonstrates basic availability and DNS-level load distribution.
+- Created multiple A records for the same DNS name.
+- Demonstrates DNS-level load distribution and basic availability concepts.
 
 ---
 
-### Records Overview (AWS Console)
-![Lab 2 Route 53 Records](images/lab2-route53-records.png)
+### Screenshot – Route 53 Records
+The screenshot below shows all Route 53 records created during this lab.
+It highlights the use of multiple routing policies within the same hosted zone,
+including Simple, Geolocation, IP-based, and Multi-Value routing.
+
+![Lab 2 Route 53 Records](lab2-route53-records.png)
 
 ---
 
@@ -122,17 +129,13 @@ The lab was implemented using the AWS Management Console without deploying any a
 
 ### Notes
 - All IP addresses used are documentation/test IPs.
-- This lab focuses on DNS and routing concepts only.
+- No applications or compute services were deployed.
 - Cost impact is minimal and limited to Route 53 DNS usage.
 
 ---
 
 ### Outcome
 After completing this lab, I am comfortable with:
-- Choosing the appropriate Route 53 routing policy
+- Choosing the correct Route 53 routing policy for different scenarios
 - Explaining DNS routing behavior in AWS
-- Designing basic traffic routing strategies for global users
-
-## Cleanup
-All AWS resources created during this lab were deleted after completion.
-No services were left running, and no ongoing costs were incurred.
+- Designing basic traffic-routing strategies for global users
