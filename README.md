@@ -127,10 +127,18 @@ including Simple, Geolocation, IP-based, and Multi-Value routing.
 
 ---
 
+### Cleanup
+After completing the lab and capturing the required screenshots, all created resources
+were removed to avoid unnecessary costs.  
+The public hosted zone and all custom DNS records were deleted, leaving no active
+Route 53 resources running.
+
+---
+
 ### Notes
 - All IP addresses used are documentation/test IPs.
 - No applications or compute services were deployed.
-- Cost impact is minimal and limited to Route 53 DNS usage.
+- Cost impact was minimal and limited to short-lived Route 53 DNS usage.
 
 ---
 
@@ -139,3 +147,4 @@ After completing this lab, I am comfortable with:
 - Choosing the correct Route 53 routing policy for different scenarios
 - Explaining DNS routing behavior in AWS
 - Designing basic traffic-routing strategies for global users
+- Managing AWS resources with cost awareness
